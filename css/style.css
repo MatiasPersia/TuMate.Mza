@@ -3,8 +3,7 @@ html{
     zoom: 80%;
 }
 body{
-/*     margin: 100px;
- */    padding: 0;
+    padding: 0;
     font-family: 'Preahvihear', sans-serif;
     background-color: #ffda9e;
     display: flex;
@@ -58,13 +57,26 @@ nav a:hover{
     background-color: #ffe3b6;
 }
 
-.formato{
-    max-width: 550px;
-    border-radius: 10%;
-    justify-content: center;
-
+.formato-padre{
+    width:500px;
+    margin-top: 20px;
+    margin-bottom: 60px; 
+    display: flex;
+    flex-direction: row;
 }
-    
+.formato-hijo{
+    border-radius: 10%;
+    border: solid 3px black;
+}
+.centradoC{
+    align-items: center;
+}
+.colocacion{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 .bienvenida{
     margin-top: 20px;
     font-family:'Preahvihear', sans-serif ;
@@ -312,6 +324,11 @@ transition: 0.5s;
     p{
         margin: 20px;
     }
+    .formato{
+        margin-left: 22px;
+        max-width: 600px;
+    }
+    
     .LogoWpp{
         flex-direction: column;
         display: flex;
