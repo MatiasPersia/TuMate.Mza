@@ -12,7 +12,7 @@ body{
 }
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around !important;
     min-height: 110px;
     background-color:#ffda9e;
 }
@@ -58,9 +58,9 @@ nav a:hover{
 }
 
 .formato-padre{
-    width:500px;
-    margin-top: 20px;
-    margin-bottom: 60px; 
+    width:600px;
+    margin-top: 50px;
+    margin-bottom: 67px; 
     display: flex;
     flex-direction: row;
 }
