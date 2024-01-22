@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
 html{
     zoom: 80%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body{
     padding: 0;
     font-family: 'Preahvihear', sans-serif;
     background-color: #ffda9e;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
+
 header{
     display: flex;
     justify-content: space-around !important;
@@ -19,6 +20,16 @@ header{
 
 .Titulo{
     display: none;
+}
+.pp{ /* TITULO DE GALERIA PERSONALIZADA */
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+.botoncontacto{
+    font-size: 19px;
+    text-shadow: 0.5px 1px 1px black;
 }
 
 .logo{
@@ -54,15 +65,15 @@ nav a:hover{
 }
 
 .cuerpo{
-    background-color: #ffe3b6;
+    background-color: #ffda9e;
 }
 
 .formato-padre{
     width:600px;
     margin-top: 50px;
     margin-bottom: 67px; 
-    display: flex;
-    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .formato-hijo{
     border-radius: 10%;
@@ -71,7 +82,7 @@ nav a:hover{
 .centradoC{
     align-items: center;
 }
-.colocacion{
+.colocacion{ /* BOTON DE COMPRA YA */
     position: absolute;
     top: 90%;
     left: 50%;
@@ -192,6 +203,9 @@ section {
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
   }
+  .padcarrito{
+    margin-left: 400px;
+  }
 
   .añadirCarrito:hover::after {
     left: 0;
@@ -223,7 +237,8 @@ width: 100%;
 }
 
 .margenAbajo{
-    margin-bottom: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .footerConteiner{
@@ -273,15 +288,6 @@ justify-content: start;
 .socialIcons a:hover i{
 color: white;
 transition: 0.5s;
-}
-
-.video{
-    width: 400px ; 
-    height: 400px;
-    padding: 20px;
-    border-radius: 40px;
-    margin-left: 600px;
-    justify-content: center;
 }
 
 @media (min-width:300px) and (max-width:700px){
