@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+html{
+    zoom: 80%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* VARIABLES */
+$colorbody:#ffda9e;
+
+@import "generales/header";
+@import "generales/footer";
+@import "pages/index";
+@import "pages/contacto";
+@import "pages/personalizado";
+@import "pages/vendidos";
+@import "generales/mediaQ";

@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-around !important;
+    min-height: 110px;
+    background-color:#ffda9e;
+    .logo{
+        display: flex;
+        align-items: center;
+        & img{
+            height: 150px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .navbar{
+        font-family: 'Preahvihear', sans-serif;
+        font-size: 1.2rem;
+        .padcarrito{
+            margin-left: 400px;
+          }
+    }
+}

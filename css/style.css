@@ -7,16 +7,15 @@ html{
 }
 body{
     padding: 0;
-    font-family: 'Preahvihear', sans-serif;
     background-color: #ffda9e;
+    font-family: 'Preahvihear', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-main{
-    flex: 1;
+.cuerpo{
+    background-color: #ffda9e;
 }
-
 header{
     display: flex;
     justify-content: space-around !important;
@@ -24,9 +23,7 @@ header{
     background-color:#ffda9e;
 }
 
-.Titulo{
-    display: none;
-}
+
 .pp{ /* TITULO DE GALERIA PERSONALIZADA */
     background-color: black;
     padding-left: 15px;
@@ -50,28 +47,9 @@ header{
     margin-bottom: 10px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
-
-nav a{
-    font-size: 20px;
-    font-weight: 400;
-    padding-right: 10px;
-}
-
-nav a:hover{
-    color: white;
-}
-
 .navbar{
     font-family: 'Preahvihear', sans-serif;
     font-size: 1.2rem;
-}
-
-.cuerpo{
-    background-color: #ffda9e;
 }
 
 .formato-padre{
@@ -141,13 +119,11 @@ nav a:hover{
     overflow-x: block;
     scroll-snap-type: x mandatory;
 }
-
+/* SECTION DE POPULARES */
 section {
     display: flex;
     flex-direction: wrap;
     justify-content: center;
-    align-content: space-evenly;
-
 }
 
 .detallesProducto {
@@ -237,11 +213,10 @@ section {
 }
 
 footer{
-background-color:#f8c777;
-align-self: baseline;
-width: 100%;
-margin-top: auto;
-}
+    background-color:#f8c777;
+    align-self: baseline;
+    width: 100%;
+    }
 
 .margenAbajo{
     margin-top: 60px;
@@ -262,7 +237,6 @@ justify-content: start;
     text-align: center;
     margin-right: 240px;
     margin-top: 20px;
-
 }
 
 .socialIcons{

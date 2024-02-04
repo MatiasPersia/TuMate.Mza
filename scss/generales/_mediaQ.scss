@@ -1,0 +1,75 @@
+@media (min-width:300px) and (max-width:780px){
+    /* HEADER */
+    header{
+        flex-direction:column-reverse;
+        nav{
+            width: 100%;
+            font-size: 30px;
+            padding-left: 10px;
+            background-color: #ffda9e;
+            text-align: center;
+            .navbar-nav {
+                max-height: none 
+              }      
+        }
+    
+    .logo{
+        width: 100%;    
+        justify-content: center;
+        img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+/*PAGE: INDEX */    
+    .cajaProductos{
+        flex-direction:column;
+        box-sizing: 10px;
+        align-content: center;
+        .product-box{
+            justify-content: center;
+            width: 350px
+        }
+    }
+/* PAGE: PERSONALIZADO */
+    .pp{
+        background-color: none; 
+}
+/* PAGE: CONTACTO */
+body{
+.bienvenida{
+    margin-left:3px;
+    margin-right: 3px;
+}
+.margenes{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+/* POPULARES */
+.centradoC{
+    display: flex;
+    flex-direction: column;
+    .formato-padre{
+        width: 500px;
+    }
+}
+}
+/* GENERALES */
+    .LogoWpp{
+        flex-direction: column;
+        display: flex;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    .copyright{
+        display: none;
+    }
+    .socialIcons{
+        width: 100%;
+    }
+
+}

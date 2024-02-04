@@ -1,0 +1,44 @@
+body {
+    .bienvenida {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-family:'Preahvihear', sans-serif ;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    .tg {
+        font-family:'Preahvihear', sans-serif;
+        font-size: 1.2rem;
+    }
+  
+    .margenes {
+            margin-top: 10px;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-bottom: 10px;
+    }
+  
+    .distancia {
+        margin-top: 20px;
+    }
+  
+    .margenAbajo {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    section{
+        .fa-whatsapp{
+            padding-left: 5px;
+            padding-right: -5px;
+            color:green;
+            background-color: rgb(97, 201, 0);
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 50px;
+            right: 40px;
+            font-size: 60px;
+            border-radius: 40%;
+        }
+    }
+}

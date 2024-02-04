@@ -1,0 +1,77 @@
+body{
+    .pp{ /* TITULO DE GALERIA PERSONALIZADA */
+        padding-left: 15px;
+        padding-right: 15px;
+        color: black;
+    }
+    .navbar{
+      background-color: $colorbody;
+  }
+    .añadirCarrito{
+        background-color: #FF7F00; /* Color de fondo naranja */
+        color: #FFFFFF; /* Texto blanco */
+        padding: 10px 20px;
+        margin-top: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-family: 'Preahvihear', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        & {
+        background: #fff; /* color de fondo */
+        color: #000000; /* color de fuente */
+        border: 2px solid #e2850c; /* tamaño y color de borde */
+        padding: 16px 20px;
+        border-radius: 3px; /* redondear bordes */
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+        text-decoration:none;
+      }
+        &:hover {
+        color: #fff; /* color de fuente hover */
+      }
+        &::after {
+        content: "";
+        background: #f1730b; /* color de fondo hover */
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 100%;
+        bottom: -100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+        &:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+      .botoncontacto{
+        font-size: 19px;
+        text-shadow: 0.5px 1px 1px black;
+        }
+    }
+    section{
+        .fa-whatsapp{
+            padding-left: 5px;
+            padding-right: -5px;
+            color:green;
+            background-color: rgb(97, 201, 0);
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 50px;
+            right: 40px;
+            font-size: 60px;
+            border-radius: 40%;
+        }
+    }
+}
