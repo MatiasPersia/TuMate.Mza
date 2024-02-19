@@ -1,0 +1,35 @@
+@media (min-width:768px) and (max-width:1024px){
+    /* INICIO */
+    body{
+    .cajaProductos{
+        display: flex;
+        flex-wrap: wrap;
+        .product-box{
+            flex: 1 0 25% !important;
+        }
+    }
+}
+    /*PERSONALIZADO*/
+    body{
+        .cardFriends{
+            display: none;
+        }
+    }
+    /* CONTACTO */
+    body{
+        .bienvenida{
+            margin-top: 30px;
+            font-size: 3.5rem;
+        }
+        .margenes{
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+    }
+    /* MAS VENDIDOS */
+    body{
+        .centradoC{
+            @include flex-column-alingcenter
+        }
+    }
+}

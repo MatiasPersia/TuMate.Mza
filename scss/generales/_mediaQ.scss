@@ -1,4 +1,4 @@
-@media (min-width:300px) and (max-width:780px){
+@media (min-width:320px) and (max-width:767px){
     /* HEADER */
     header{
         flex-direction:column-reverse;
@@ -53,7 +53,7 @@ body{
     display: flex;
     flex-direction: column;
     .formato-padre{
-        width: 500px;
+        max-width: 94%;
     }
 }
 }

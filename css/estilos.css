@@ -8,6 +8,7 @@ html {
 }
 
 /* VARIABLES */
+/* MIXINS */
 header {
   display: flex;
   justify-content: space-around !important;
@@ -304,8 +305,11 @@ body section {
   flex-direction: wrap;
   justify-content: center;
 }
+body .centradoC {
+  justify-content: space-evenly;
+}
 body .centradoC .formato-padre {
-  width: 600px;
+  max-width: 600px;
   margin-top: 50px;
   margin-bottom: 67px;
   margin-left: 15px;
@@ -335,7 +339,7 @@ body .fa-whatsapp {
   border-radius: 40%;
 }
 
-@media (min-width: 300px) and (max-width: 780px) {
+@media (min-width: 320px) and (max-width: 767px) {
   /* HEADER */
   header {
     flex-direction: column-reverse;
@@ -373,6 +377,8 @@ body .fa-whatsapp {
     background-color: none;
   }
   /* PAGE: CONTACTO */
+ 
+    /* POPULARES */
   body .bienvenida {
     margin-left: 3px;
     margin-right: 3px;
@@ -388,7 +394,7 @@ body .fa-whatsapp {
     flex-direction: column;
   }
   body .centradoC .formato-padre {
-    width: 500px;
+    max-width: 94%;
   }
   /* GENERALES */
   .LogoWpp {
@@ -403,6 +409,35 @@ body .fa-whatsapp {
   }
   .socialIcons {
     width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* INICIO */
+  body .cajaProductos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .cajaProductos .product-box {
+    flex: 1 0 25% !important;
+  }
+  /*PERSONALIZADO*/
+  body .cardFriends {
+    display: none;
+  }
+  /* CONTACTO */
+  body .bienvenida {
+    margin-top: 30px;
+    font-size: 3.5rem;
+  }
+  body .margenes {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  /* MAS VENDIDOS */
+  body .centradoC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

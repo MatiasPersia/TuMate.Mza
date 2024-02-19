@@ -9,8 +9,9 @@ body{
         justify-content: center;
     }
     .centradoC{
+        justify-content: space-evenly;
         .formato-padre{
-            width:600px;
+            max-width:600px;
             margin-top: 50px;
             margin-bottom: 67px; 
             margin-left: 15px;
