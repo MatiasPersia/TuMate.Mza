@@ -114,15 +114,16 @@
     <nav class="navbar">
       <div class="container-fluid">
           <form class="d-flex w-100  " role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <input class="form-control me-2" id="miBusqueda" type="search" placeholder="Buscar" aria-label="Search" autocomplete="off">
               <button class="btn btn-outline-danger " type="submit"><i
                       class="fa-solid fa-magnifying-glass"></i></button>
           </form>
       </div>
+      <div id="resultadosBusqueda" class="lista-busqueda"></div>
     </nav>
-    <section class="cajaProductos">
-      <div class="product-box">
-        <div id="CPokebola" class="carousel slide">
+    <section class="cajaProductos" id="miLista">
+      <div class="product-box item">
+        <div id="CPokebola" class="carousel slide ">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -165,14 +166,14 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="detallesProducto">
+        <div class="detallesProducto ">
           <div class="nombreProducto">MATE POKEBOLA</div>
           <div class="precioProducto">$14.99 USD</div>
           <button class="añadirCarrito">AÑADIR AL CARRITO</button>
         </div>
       </div>
-      <div class="product-box">
-        <div id="CBulbasaur" class="carousel slide">
+      <div class="product-box item">
+        <div id="CBulbasaur" class="carousel slide ">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -215,13 +216,13 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="detallesProducto">
+        <div class="detallesProducto ">
           <div class="nombreProducto">MATE BULBASAUR</div>
           <div class="precioProducto">$14.99 USD</div>
           <button class="añadirCarrito">AÑADIR AL CARRITO</button>
         </div>
       </div>
-      <div class="product-box">
+      <div class="product-box item">
         <div id="CCDP" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -271,7 +272,7 @@
           <button class="añadirCarrito">AÑADIR AL CARRITO</button>
         </div>
       </div>
-      <div class="product-box">
+      <div class="product-box item">
         <div id="CSquirtle" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -321,7 +322,7 @@
           </div>
         </div>
       </div>
-      <div class="product-box">
+      <div class="product-box item">
         <div id="CHomero" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -371,7 +372,7 @@
           </div>
         </div>
       </div>
-      <div class="product-box">
+      <div class="product-box item">
         <div id="CKitty" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -416,12 +417,12 @@
           </button>
           <div class="detallesProducto">
             <div class="nombreProducto">MATE KITTY</div>
-            <div class="precioProducto">$14.99 USD</div>
+            <div class="precioProducto">$19.99 USD</div>
             <button class="añadirCarrito">AÑADIR AL CARRITO</button>
           </div>
         </div>
       </div>
-      <div class="product-box">
+      <div class="product-box item">
         <div id="CBuzz" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -466,12 +467,12 @@
           </button>
           <div class="detallesProducto">
             <div class="nombreProducto">MATE BUZZ LIGHTYEAR</div>
-            <div class="precioProducto">$14.99 USD</div>
+            <div class="precioProducto">$19.99 USD</div>
             <button class="añadirCarrito">AÑADIR AL CARRITO</button>
           </div>
         </div>
       </div>
-      <div class="product-box">
+      <div class="product-box item">
         <div id="CMinion" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -516,7 +517,7 @@
           </button>
           <div class="detallesProducto">
             <div class="nombreProducto">MATE MINION</div>
-            <div class="precioProducto">$14.99 USD</div>
+            <div class="precioProducto">$19.99 USD</div>
             <button class="añadirCarrito">AÑADIR AL CARRITO</button>
           </div>
         </div>
@@ -535,6 +536,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="/scripts.js"></script>
   </body>
   <footer class="position-relative">
     <div class="footerConteiner">

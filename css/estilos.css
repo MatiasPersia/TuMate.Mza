@@ -87,6 +87,52 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+#resultadosBusqueda {
+  position: absolute;
+  top: 100%; /* hace que el menú comience justo debajo del input de búsqueda */
+  z-index: 999; /* asegura que el menú desplegable esté por encima de otros elementos */
+}
+#productoImagen {
+  max-width: 30%; /* Limita el ancho de la imagen al 50% del ancho de su contenedor */
+  height: auto; /* Asegura que la imagen mantenga su proporción */
+}
+
+.precio {
+  color: #05ac05; /* Verde semi oscuro */
+  padding-left: 40px; 
+}
+
+.lista-busqueda {
+  position: absolute;
+  z-index: 1000;
+  background-color: #ffffff;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 10px; /* Añade un margen superior */
+}
+
+.lista-busqueda div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #000000;
+}
+
+.lista-busqueda div:hover {
+  background-color: #ffc972;
+}
+
+.lista-busqueda img {
+  width: 100px; /* Tamaño fijo para la imagen */
+  height: auto;
+  margin-right: 10px;
+}
+
+.lista-busqueda p {
+  margin: 0;
+}
+
 body .navbar {
   background-color: #ffda9e;
 }
